@@ -1,0 +1,153 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model hospitals {
+  id             Int              @id @default(autoincrement())
+  name           String           @unique @db.VarChar
+  location       String           @db.VarChar
+  contact_email  String           @unique @db.VarChar
+  contact_phone  String           @db.VarChar
+  BloodInventory BloodInventory[]
+  BloodRecipient BloodRecipient[]
+  notifications  notifications[]
+  organs         organs[]
+  patients       patients[]
+  users          users[]
+
+  @@index([id], map: "ix_hospitals_id")
+}
+
+model matches {
+  id          Int       @id @default(autoincrement())
+  organ_id    Int?
+  patient_id  Int?
+  match_score Float?
+  status      String?   @db.VarChar
+  matched_by  Int?
+  created_at  DateTime? @default(now()) @db.Timestamptz(6)
+  ai_summary  String?   @db.VarChar
+  users       users?    @relation(fields: [matched_by], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  organs      organs?   @relation(fields: [organ_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  patients    patients? @relation(fields: [patient_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@index([id], map: "ix_matches_id")
+}
+
+model notifications {
+  id          Int       @id @default(autoincrement())
+  hospital_id Int
+  message     String    @db.VarChar
+  created_at  DateTime? @default(now()) @db.Timestamptz(6)
+  hospitals   hospitals @relation(fields: [hospital_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@index([id], map: "ix_notifications_id")
+}
+
+model organs {
+  id                         Int        @id @default(autoincrement())
+  organ_type                 String     @db.VarChar
+  recovery_date              DateTime   @db.Timestamp(6)
+  expected_preservation_time Float
+  donor_age                  Int
+  donor_blood_type           String     @db.VarChar
+  donor_gender               String     @db.VarChar
+  cause_of_death             String?    @db.VarChar
+  organ_size                 String?    @db.VarChar
+  organ_condition_rating     String     @db.VarChar
+  hla_a                      String?    @db.VarChar
+  hla_b                      String?    @db.VarChar
+  hla_c                      String?    @db.VarChar
+  hla_drb1                   String?    @db.VarChar
+  hla_dqb1                   String?    @db.VarChar
+  donor_hospital             String     @db.VarChar
+  current_location           String?    @db.VarChar
+  transport_arrangements     String?    @db.VarChar
+  medical_history            String?    @db.VarChar
+  viral_testing_status       String     @db.VarChar
+  organ_biopsy_results       String?    @db.VarChar
+  hospital_id                Int?
+  status                     String     @db.VarChar
+  created_at                 DateTime?  @default(now()) @db.Timestamptz(6)
+  matches                    matches[]
+  hospitals                  hospitals? @relation(fields: [hospital_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@index([id], map: "ix_organs_id")
+}
+
+model patients {
+  id                   Int        @id @default(autoincrement())
+  name                 String     @db.VarChar
+  hospital_id          Int?
+  blood_type           String     @db.VarChar
+  organ_needed         String     @db.VarChar
+  priority_status      Float
+  location             String     @db.VarChar
+  zip_code             Int
+  medical_history      String?    @db.VarChar
+  date_of_birth        DateTime?  @db.Timestamp(6)
+  gender               String     @db.VarChar
+  weight_in_kg         Float?
+  height_in_cm         Float?
+  email                String     @unique @db.VarChar
+  phone_number         String     @db.VarChar
+  primary_diagnosis    String     @db.VarChar
+  hla_test             Json?
+  pra_score            Float?
+  previous_transplant  Int
+  comorbidities        String?    @db.VarChar
+  current_medications  String?    @db.VarChar
+  treating_in_hospital String?    @db.VarChar
+  insurance_details    String?    @db.VarChar
+  status               String     @db.VarChar
+  created_at           DateTime?  @default(now()) @db.Timestamptz(6)
+  matches              matches[]
+  hospitals            hospitals? @relation(fields: [hospital_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@index([id], map: "ix_patients_id")
+}
+
+model users {
+  id          Int        @id @default(autoincrement())
+  email       String?    @unique(map: "ix_users_email") @db.VarChar
+  password    String?    @db.VarChar
+  role        String?    @db.VarChar
+  hospital_id Int?
+  staff_id    String?    @unique(map: "ix_users_staff_id") @db.VarChar
+  created_at  DateTime?  @default(now()) @db.Timestamptz(6)
+  matches     matches[]
+  hospitals   hospitals? @relation(fields: [hospital_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@index([hospital_id], map: "ix_users_hospital_id")
+  @@index([id], map: "ix_users_id")
+}
+
+model BloodInventory {
+  id             Int       @id @default(autoincrement())
+  bloodType      String
+  unitsAvailable Int
+  donorHospital  String
+  lastUpdated    DateTime  @default(now())
+  hospitalId     Int
+  hospital       hospitals @relation(fields: [hospitalId], references: [id])
+}
+
+model BloodRecipient {
+  id               Int       @id @default(autoincrement())
+  name             String
+  bloodType        String
+  unitsNeeded      Int
+  priorityStatus   String
+  location         String
+  hospitalId       Int
+  phone            String?
+  email            String?
+  medicalCondition String?
+  status           String    @default("Pending")
+  hospital         hospitals @relation(fields: [hospitalId], references: [id])
+}

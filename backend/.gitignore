@@ -1,0 +1,59 @@
+venv
+./venv
+.env
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+app/__pycache__/
+app/models/__pycache__/
+app/routes/__pycache__/
+app/services/__pycache__/
+app/schema/__pycache__/
+app/utils/__pycache__/
+app/__pycache__/
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# IDE specific files (common ones)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+.idea
+.ipynb_checkpoints
+.mypy_cache
+.vscode
+__pycache__
+.pytest_cache
+htmlcov
+dist
+site
+.coverage*
+coverage.xml
+.netlify
+test.db
+log.txt
+Pipfile.lock
+env3.*
+env
+docs_build
+site_build
+venv
+docs.zip
+archive.zip
+
+# vim temporary files
+*~
+.*.sw?
+.cache
+
+# macOS
+.DS_Store
+.env
+.env.local
+.env.development.local
