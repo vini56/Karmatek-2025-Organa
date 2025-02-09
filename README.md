@@ -1,5 +1,5 @@
 
-<h1 align="center">🩸 Organa: Smart Organ & Blood Donation Network 🏥</h1>
+<h1 align="center">🩸 Organa: Smart Organ Donation Network & Notification System 🏥</h1>
     <p align="center"><em>Connecting donors and recipients through AI-driven precision.</em></p>
 
 <h2>📖 Table of Contents</h2>
@@ -27,23 +27,66 @@
     <li>🩺 <strong>Real-Time Donor-Recipient Network:</strong> Live updates for blood/organ availability and recipient needs.</li>
     <li>🔔 <strong>Automated Alerts:</strong> Notify hospitals, donors, and recipients of critical matches.</li>
     <li>📊 <strong>Analytics Dashboard:</strong> Track donation trends, success rates, and system performance.</li>
+    <li>📝 <strong>Collects Data to Train Model:</strong> Organ and patient data is collected in real-time from hospitals, including details like organ type, condition, blood type, patient medical history, and urgency. This data is crucial for developing a machine learning model to improve matching accuracy.</li>
+    <li>
+    <strong>🌐Centralised Network:</strong>
+    The system creates a centralized network that allows hospitals to share available organs with nearby hospitals if they match a patient from their list. This eliminates manual interventions and speeds up the organ-sharing process.</li>
 </ul>
-    <h2 id="installation">⚙ Installation</h2>
-    <pre><code># Clone the repository
-git clone https://github.com/yourusername/Organa.git
 
-# Install dependencies
-cd Organa
+<h2 id="installation">⚙ Installation</h2>
+
+
+
+```
+# Clone the repository
+git clone https://github.com/Subhradeep1708/Karmatek-2025-Organa
+```
+
+### Backend (Python + Fast API)
+
+```
+cd backend
+
+# Create A Virtual Environment
+python -m venv venv
+
+# Activate The Virtual Env
+./venv/Scripts/activate
+
+# Install All the dependencies
 pip install -r requirements.txt
 
-# Set up environment variables
-cp .env.example .env
+# Run the developmen server
+uvicorn app.main:app --reload
+```
 
-# Run migrations
-python manage.py migrate
+### Frontend (Next.js)
 
-# Start the server
-python manage.py runserver</code></pre>
+```
+cd frontend
+
+# Install Dependencies
+bun install
+
+# Configure .env
+
+# Run the development Server
+bun run dev
+```
+
+### Notification Service
+
+```
+cd ws
+
+# Install Dependencies
+bun install
+
+# Configure .env
+
+# Run the development Server
+bun run dev
+```
 
 <h2 id="usage">🚀 Usage</h2>
 <ol>
@@ -53,7 +96,7 @@ python manage.py runserver</code></pre>
     <li>Receive real-time alerts for matches via email/SMS.</li>
     <li>Access the dashboard to view analytics and manage donations.</li>
 </ol>
-<img src="screenshots/dashboard.png" alt="Dashboard Preview" width="600">
+<!-- <img src="screenshots/dashboard.png" alt="Dashboard Preview" width="600"> -->
 <h2 id="contributing">👥 Contributing</h2>
 <p>Contributions are welcome! Follow these steps:</p>
 <ol>
@@ -69,13 +112,13 @@ python manage.py runserver</code></pre>
 <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License Badge">
 <h2 id="acknowledgments">🙏 Acknowledgments</h2>
 <ul>
-    <li>Generative AI Model: GPT-4/Claude</li>
-    <li>Medical Data Libraries: FHIR, HL7</li>
-    <li>UI Framework: React</li>
+    <li>Generative AI Model: Gemini Flash 1.5</li>
+    <!-- <li>Medical Data Libraries: FHIR, HL7</li> -->
+    <li>UI Framework: React, Next.js, ShadCN</li>
 </ul>
 <h2 id="contact">📞 Contact</h2>
 <p>
     Project Maintainers: 
-    <a href="mailto:contact@Organa.com">contact@Organa.com</a><br>
-    GitHub: <a href="https://github.com/yourusername">@yourusername</a>
+    <a href="mailto:subhradeep1708@gmail.com">subhradeep1708@gmail.com</a><br>
+    GitHub: <a href="https://github.com/yourusername">@Subhradeep1708</a>
 </p>
