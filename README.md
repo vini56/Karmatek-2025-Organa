@@ -6,6 +6,7 @@
     <ul>
         <li><a href="#overview">Overview</a></li>
         <li><a href="#features">Features</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
         <li><a href="#installation">Installation</a></li>
         <li><a href="#usage">Usage</a></li>
         <li><a href="#contributing">Contributing</a></li>
@@ -32,6 +33,33 @@
     <strong>🌐Centralised Network:</strong>
     The system creates a centralized network that allows hospitals to share available organs with nearby hospitals if they match a patient from their list. This eliminates manual interventions and speeds up the organ-sharing process.</li>
 </ul>
+
+<h2 id="screenshots">⚙ Screenshots</h2>
+
+<h4>Home Page</h4>
+<img src="snaps/home.jpg" alt="Home Page" width="800">
+
+<h4>Login Page</h4>
+<img src="snaps/organa1.jpg" alt="Login Page" width="800">
+
+<h4>Dashboard Preview</h4>
+<img src="snaps/organa2.jpg" alt="Dashboard Preview" width="800">
+
+<h4>Patient Waitlist</h4>
+<img src="snaps/organa4.jpg" alt="Patient Waitlist" width="800">
+
+<h4>New Available Organ Addition Page(Form)</h4>
+<img src="snaps/organa7.jpg" alt="New Available Organ Addition Page" width="800">
+
+<h4>Organ Match Notifications</h4>
+<img src="snaps/organa5.jpg" alt="Organ Match Notifications" width="800">
+
+<h4>AI Powered Organ Match Analysis</h4>
+<img src="snaps/organa3.jpg" alt="AI Powered Organ Match Analysis" width="800">
+
+<h4>Organ Data Page (Dark Mode)</h4>
+<img src="snaps/organa6.jpg" alt="Login Page" width="800">
+
 
 <h2 id="installation">⚙ Installation</h2>
 
